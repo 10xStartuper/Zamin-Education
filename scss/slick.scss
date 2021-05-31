@@ -1,0 +1,147 @@
+
+/* Слайдер */
+.slick-slider{
+	min-width: 0;
+}
+/* Ограничивающая оболочка */
+.slick-list {
+	overflow: hidden;
+}
+/* Лента слайдов */
+.slick-track{
+	display: flex;
+	align-items: flex-start;
+}
+
+/* Слайд */
+// .slick-slide{}
+// /* Слайд активный */
+// /* Слайд по центру */
+// .slick-slide.slick-center{}
+
+// /* Стрелка */
+// .slick-arrow{}
+// /* Стрелка влево */
+// .slick-arrow.slick-prev{}
+// /* Стрелка вправо */
+// .slick-arrow.slick-next{}
+// /* Стрелка не активная */
+// .slick-arrow.slick-disabled{}
+
+// /* Точки */
+// .slick-dots{}
+// .slick-dots li{}
+// .slick-dots button{}
+
+/* Конкретный слайдер */
+.slider {
+	position: relative;
+}
+
+@media (max-width:767px){
+	.slider {
+		padding: 0px 40px;
+	}
+}
+
+.slider .slick-arrow{
+	position: absolute;
+	top: 50%;
+	margin: -30px 0px 0px 0px;
+	z-index: 1000;
+	font-size: 0;
+	width: 10px;
+	height: 40px;
+}
+.slider .slick-arrow.slick-prev{
+	left: 50px;
+	background: url('../img/sl-arrow_l.svg') 0 0 / 100% no-repeat;
+    outline: none!important;
+    border: none!important;
+
+}
+.slider .slick-arrow.slick-next{
+	right: 50px;
+	background: url('../img/sl-arrow_r.svg') 0 0 / 100% no-repeat;
+    outline: none!important;
+    border: none!important;
+
+}
+.slider .slick-arrow.slick-disabled{
+	opacity: 0.2;
+}
+
+.slider .slick-dots{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.slider .slick-dots li{
+	list-style: none;
+	margin: 0px 10px;
+}
+.slider .slick-dots button{
+	font-size: 0;
+	width: 10px;
+	height: 10px;
+	background-color: #fff;
+	border-radius: 50%;
+}
+
+.slider .slick-dots li.slick-active button{
+	background-color: transparent;
+	border: 1px solid #fff;
+}
+
+.slider__item {
+	padding: 0px 15px;
+}
+.slider__item img{
+	max-width: 540px;
+}
+
+.slider__item1{
+    background-image: url('../img/1.jpg');
+}
+.slider__item1{
+    background-image: url('../img/1.jpg');
+}
+.slider__item2{
+    background-image: url('../img/2.jpg');
+}
+.slider__item3{
+    background-image: url('../img/3.jpg');
+}
+.slider__item4{
+    background-image: url('../img/4.jpg');
+}
+.slider__item5{
+    
+    background-image: url('../img/1.jpg');
+    
+}
+
+.slider__item{
+    width: 540px;
+    height: 540px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	border-radius: 15px;
+}
+
+.slider-for{
+    margin-bottom: 8px;
+}
+
+.slider-nav{
+    div{
+        img{
+            width: 100px;
+            height: 56px;
+			border-radius: 5px;
+        }
+    }
+}
+
+

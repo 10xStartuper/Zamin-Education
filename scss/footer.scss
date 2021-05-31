@@ -1,0 +1,36 @@
+@import 'variables.scss';
+
+
+.contacts__content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+.zamin__youtube{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 5px;
+    i{
+        font-size: 50px;
+        color: #ff0000;
+    }
+    h4{
+        color: #ff0000;
+    }
+}
+
+.contacts__number{
+    color: $main;
+}
+.footer{
+    font-size: 14px;
+    color: #fff;
+    text-shadow: 0px 0px 10px #4c4c4c;
+    background-color: $second;
+    padding: 20px;
+    text-align: center;
+}

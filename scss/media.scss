@@ -1,0 +1,80 @@
+@import 'variables.scss';
+
+
+@media (max-width: 768px) {
+    .menu-burger{
+        display: block!important;
+    }    
+    .header__menu-items{
+        display: none!important;
+    }
+    .header__mail{
+        display: none!important;
+    }
+    .header__youtube{
+        text-align: center!important;
+    }
+    section.home{
+        height: 130vh!important;
+    }
+    .colored-area{
+        padding: 20px 0px!important;
+    }
+    .home__img{
+        height: 360px!important;
+    }
+    .home__title{
+        font-size: 36px !important;
+    }
+    .home__content{
+        row-gap: 100px;
+    }
+    .content__text{
+        text-align: center;
+        .main-btn{
+            margin: 0 auto;
+        }
+        
+    }
+    .gallery__title{
+        font-size: 36px !important;
+    }
+    .elementor__block1{
+        row-gap: 48px;
+        margin-bottom: 48px;
+    }
+    .elementor__block2{
+        row-gap: 48px;
+    }
+    .elementor__item{
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        .elementor__img{
+            margin: 0;
+            margin-bottom: 16px;
+        }
+    }
+    .courses__banner{
+        display: none;
+    }
+    .courses__content{
+        width: 100%!important;
+        .courses__title{
+            text-align: center;
+        }
+        .main-btn2{
+            margin: 0 auto;
+        }
+    }
+
+    .contacts__content{
+        flex-direction: column;
+        row-gap: 30px;
+        text-align: center;
+    }
+    .product-block{
+        padding: 0!important;
+        margin-top: 30px;
+    }
+}

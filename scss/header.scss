@@ -1,0 +1,169 @@
+@import 'variables.scss';
+.header__top{
+    height: 48px;
+    padding: 10px 0px;
+    background-color: $main;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__mail{
+    font-size: 14px;
+    a{
+        color: #fff;
+        i{
+            margin-right: 11px;
+        }
+    }
+}
+
+
+.header__youtube{
+    font-size: 14px;
+    text-align: right;
+    a{
+        color: #fff;
+        i{
+            margin-right: 11px;
+        }
+    }
+}
+
+
+// header bottom
+
+.header__bottom{
+    .header__logo{
+        .container{
+            padding: 60px 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img{
+                max-width: 220px;
+            }
+        }  
+        
+    }
+
+    .header__menu{
+        border-style: dotted;
+        border-width: 1px 0px 1px 0px;
+        border-color: #8e8e8e;
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            ul{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                li{
+                    padding: 16px 41px;
+                    height: 100%;
+                    position: relative;
+                    transition: .3s;
+                    a{
+                        color: #000;
+                    }
+                    &:hover{
+                        a{
+                            color: $main!important;
+                        }
+                        &::before{
+                            content: '';
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 4px;
+                            background-color: $main;
+                        }
+                        &::after{
+                            content: '';
+                            position: absolute;
+                            bottom: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 3px;
+                            background-color: $main;
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+}
+
+li.active{
+    position: relative;
+    a{
+        color: $main!important;
+    }
+    &::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        background-color: $main;
+    }
+    &::after{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background-color: $main;
+    }
+}
+
+.menu-burger{
+    font-size: 32px;
+    display: none;
+}
+.header__menu-adaptive{
+    display: none;
+    transition: 0.25s;
+    transform-origin: top;
+    ul{
+        li{
+            padding: 15px;
+            a{
+                color: #000000;
+            }
+        }
+    }
+}
+.header__menu-adaptive.active{
+    display: block;
+    animation-name: dropdown__menu;
+    animation-duration: .7s;
+}
+
+.menu-active{
+    background-color: $main;
+    a{
+        color: #fff!important;
+    }
+}
+
+
+
+
+
+
+@keyframes dropdown__menu {
+    from {
+        transform: scaleY(0);
+        max-height: 0;
+    }
+    to {
+        transform: scaleY(1);
+        max-height: 100vh;
+    }
+}
