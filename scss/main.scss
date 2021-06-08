@@ -520,7 +520,7 @@ section.courses{
 
 .product-bottom-details {
     div{
-        float: left;
+        
         width: 50%;
     }
     
@@ -571,4 +571,76 @@ section.courses{
     flex-wrap: wrap;
     gap: 30px;
     padding-left: 20px;
+}
+
+
+
+// Dashboard page
+section.dashboard{
+    padding: 0!important;
+    background-color: #F2EAE3;
+    background-image: url(../img/gallery-bg.png);
+    background-size: 38% auto;
+    border-bottom: 1px solid #dcdfe5;
+    .container{
+        background-color: #ffffff;
+    }
+}
+.dashboard__menu{
+    border-right: 1px solid #dcdfe5;
+    padding: 20px 0px;
+    ul{
+        li.active{
+            background-color: $main;
+            a{
+                color: #ffffff!important;
+                i{
+                    color: #ffffff!important;
+                }
+            }
+            &:hover{
+                background-color: $main;
+            }
+        }
+        li{
+            padding: 10px 20px;
+            cursor: pointer;
+            
+            a{
+                color: #363636;
+                i{
+                    margin-right: 10px;
+                    color: $main2;
+                }
+            }
+            &:hover{
+                background-color: #EDF0F9;
+                
+            }
+        }
+    }
+}
+
+.dashboard__list-top{
+    padding-bottom: 10px;
+    border-bottom: 1px solid #dcdfe5;
+}
+
+.dashboard__list-bottom{
+    padding-top: 10px;
+}
+
+.dashboard__bottom{
+    border-top: 1px solid #dcdfe5;
+}
+.dashboard__top{
+    display: flex;
+    align-items: center;
+    padding: 32px 0px;
+}
+.dashboard__profile{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 32px;
 }

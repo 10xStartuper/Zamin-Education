@@ -63,32 +63,47 @@
 
     <!-- main part -->
       <main>
-          <section id="login" class="login">
-              <div class="container">
-                    <form class="signup" onsubmit="return false" autocomplete="off">
-                        <h1 style="font-size: 32px;">Ro'yxatdan o'tish</h1>
-                        <h4 class="signup__subtitle">Ro'yxatdan o'tmagan bo'lsangiz <a href="signup.html"><span>Ro'yxatdan o'tish</span></a></h4>
-                    
-                        <div class="signup__field">
-                        <input class="signup__input" type="text" name="username" id="username" required />
-                        <label class="signup__label" for="username">Ism</label>
-                        </div>
-                    
-                        <div class="signup__field">
-                        <input class="signup__input" type="text" name="email" id="email" required />
-                        <label class="signup__label" for="email">Email</label>
-                        </div>
-                    
-                        <div class="signup__field">
-                        <input class="signup__input" type="password" name="password" id="password" required />
-                        <label class="signup__label" for="password">Parol</label>
-                        </div>
-                    
-                        <button class="main-btn-login">Sign up</button>
-                    </form>
+          <section id="dashboard" class="dashboard">
+        <div class="container">
+            <div class="dashboard__content">
+                <div class="dashboard__top">
+                    <div class="dashboard__profile" style="background: #ccc;"></div>
+                    <h3 class="profile__title">Salom, Javoxir Nurmatjonov</h3>
                 </div>
-            </section>
+                <div class="row dashboard__bottom">
+                    <div class="col-md-3">
+                        <div class="dashboard__menu">
+                            <ul class="dashboard__list-top">
+                                <li class="active"><a href="#"><i class="fas fa-tachometer-alt"></i>Boshqaruv paneli</a></li>
+                                <li><a href="#"><i class="fas fa-user"></i>Mening profilim</a></li>
+                                <li><a href="#"><i class="fas fa-graduation-cap"></i>Kurslar</a></li>
+                                <li><a href="#"><i class="fas fa-bookmark"></i>Saqlangan kurslar</a></li>
+                                <li><a href="#"><i class="fas fa-star-half-alt"></i>Fikrlar</a></li>
+                                <li><a href="#"><i class="fas fa-cubes"></i>Mening Test Urinishlarim</a></li>
+                            </ul>
+                            <ul class="dashboard__list-bottom">
+                                <li><a href="#"><i class="fas fa-cogs"></i>Sozlamalar</a></li>
+                                <li><a href="#"><i class="fas fa-sign-out-alt"></i>Chiqish</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-9 p-4">
+                        <h4 class="dashboard__title">
+                            Boshqaruv paneli
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
       </main>
+
+      
+        
+        
+        
+        
+        
 
       <!-- footer part -->
       <footer>
