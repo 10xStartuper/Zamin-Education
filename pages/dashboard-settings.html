@@ -67,14 +67,14 @@
         <div class="container">
             <div class="dashboard__content">
                 <div class="dashboard__top">
-                    <div class="dashboard__img style="background: #ccc;"></div>
+                    <div class="dashboard__img" style="background: #ccc;"></div>
                     <h3 class="profile__title">Salom, Javoxir Nurmatjonov</h3>
                 </div>
                 <div class="row dashboard__bottom">
                     <div class="col-md-3">
                         <div class="dashboard__menu">
                             <ul class="dashboard__list-top">
-                                <li class="active"><a href="#"><i class="fas fa-tachometer-alt"></i>Boshqaruv paneli</a></li>
+                                <li><a href="#"><i class="fas fa-tachometer-alt"></i>Boshqaruv paneli</a></li>
                                 <li><a href="#"><i class="fas fa-user"></i>Mening profilim</a></li>
                                 <li><a href="#"><i class="fas fa-graduation-cap"></i>Kurslar</a></li>
                                 <li><a href="#"><i class="fas fa-bookmark"></i>Saqlangan kurslar</a></li>
@@ -82,15 +82,94 @@
                                 <li><a href="#"><i class="fas fa-cubes"></i>Mening Test Urinishlarim</a></li>
                             </ul>
                             <ul class="dashboard__list-bottom">
-                                <li><a href="#"><i class="fas fa-cogs"></i>Sozlamalar</a></li>
+                                <li class="active"><a href="#"><i class="fas fa-cogs"></i>Sozlamalar</a></li>
                                 <li><a href="#"><i class="fas fa-sign-out-alt"></i>Chiqish</a></li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-md-9 p-4">
                         <h4 class="dashboard__title">
-                            Boshqaruv paneli
+                            Kurslar
                         </h4>
+                        <div class="dashboard__settings">
+                            <div class="tab">
+                                <button class="tablinks active" onclick="openCity(event, 'all-courses')">Profil</button>
+                                <button class="tablinks" onclick="openCity(event, 'active-courses')">Parolni yangilash</button>
+                              </div>
+                              <div id="all-courses" class="tabcontent tab-active">
+                                <form>
+                                    <div class="form-img">
+                                        <div class="dashboard__img" style="background: #ccc;"></div>
+                                        <div class="main-btn2">
+                                            <a href="#">
+                                                <i class="fas fa-exchange-alt"></i>
+                                                Rasmni ozgartirish
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-row">
+                                      <div class="form-group col-md-6">
+                                        <label for="inputEmail4">Ism</label>
+                                        <input type="text" class="form-control" placeholder="Ism">
+                                      </div>
+                                      <div class="form-group col-md-6">
+                                        <label for="inputPassword4">Familiya</label>
+                                        <input type="text" class="form-control" id="inputPassword4" placeholder="Familiya">
+                                      </div>
+                                    </div>
+                                    <div class="form-group">
+                                      <label for="inputAddress">Foydalanuvchi ismi</label>
+                                      <input type="text" class="form-control" id="inputAddress" placeholder="Foydalanuvchi ismi">
+                                    </div>
+                                    <div class="form-group">
+                                      <label for="inputAddress2">Telefon raqam</label>
+                                      <input type="number" class="form-control" id="inputAddress2" placeholder="Telefon raqam">
+                                    </div>
+                                    <div class="form">
+                                      <div class="form-group col-md-12 p-0">
+                                        <label for="inputCity">Haqida</label>
+                                        <input type="text" class="form-control about-user" id="inputCity">
+                                      </div>
+                                      <div class="form-group col-md-4 p-0">
+                                        <label for="inputState">Saytdagi ism</label>
+                                        <select id="inputState" class="form-control">
+                                          <option selected>Javohir Nurmatjonov</option>
+                                          <option>Javohir</option>
+                                          <option>Nurmatjonov</option>
+                                          <option>Nurmatjonov Javohir</option>
+                                          <option>JavoxirOne</option>
+                                        </select>
+                                      </div>
+                                    </div>
+                                    <div class="main-btn2" style="max-width: 210px;">
+                                        <a href="#">
+                                            <i class="fas fa-save"></i>
+                                            SAQLASH
+                                        </a>
+                                    </div>
+                                  </form>
+                              </div>
+                              
+                              <div id="active-courses" class="tabcontent">
+                                    <div class="form-group col-md-12 p-0">
+                                        <label for="inputAddress">Hozirgi parol</label>
+                                        <input type="password" class="form-control" id="inputAddress" placeholder="parol">
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-group col-md-6">
+                                        <label for="inputEmail4">Yangi parol</label>
+                                        <input type="password" class="form-control" placeholder="parol">
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                        <label for="inputPassword4">Parolni tasdiqlash</label>
+                                        <input type="password" class="form-control" id="inputPassword4" placeholder="parol">
+                                        </div>
+                                    </div>
+                                  
+                                  </div>
+                              </div>
+                        </div>
                     </div>
                 </div>
             </div>

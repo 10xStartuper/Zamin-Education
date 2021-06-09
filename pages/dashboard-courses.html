@@ -67,16 +67,16 @@
         <div class="container">
             <div class="dashboard__content">
                 <div class="dashboard__top">
-                    <div class="dashboard__img style="background: #ccc;"></div>
+                    <div class="dashboard__img" style="background: #ccc;"></div>
                     <h3 class="profile__title">Salom, Javoxir Nurmatjonov</h3>
                 </div>
                 <div class="row dashboard__bottom">
                     <div class="col-md-3">
                         <div class="dashboard__menu">
                             <ul class="dashboard__list-top">
-                                <li class="active"><a href="#"><i class="fas fa-tachometer-alt"></i>Boshqaruv paneli</a></li>
+                                <li><a href="#"><i class="fas fa-tachometer-alt"></i>Boshqaruv paneli</a></li>
                                 <li><a href="#"><i class="fas fa-user"></i>Mening profilim</a></li>
-                                <li><a href="#"><i class="fas fa-graduation-cap"></i>Kurslar</a></li>
+                                <li class="active"><a href="#"><i class="fas fa-graduation-cap"></i>Kurslar</a></li>
                                 <li><a href="#"><i class="fas fa-bookmark"></i>Saqlangan kurslar</a></li>
                                 <li><a href="#"><i class="fas fa-star-half-alt"></i>Fikrlar</a></li>
                                 <li><a href="#"><i class="fas fa-cubes"></i>Mening Test Urinishlarim</a></li>
@@ -89,8 +89,26 @@
                     </div>
                     <div class="col-md-9 p-4">
                         <h4 class="dashboard__title">
-                            Boshqaruv paneli
+                            Kurslar
                         </h4>
+                        <div class="dashboard__courses">
+                            <div class="tab">
+                                <button class="tablinks active" onclick="openCity(event, 'all-courses')">Barcha kurslar</button>
+                                <button class="tablinks" onclick="openCity(event, 'active-courses')">Faol kurslar</button>
+                                <button class="tablinks" onclick="openCity(event, 'finished-courses')">Tugallangan kurslar</button>
+                              </div>
+                              <div id="all-courses" class="tabcontent tab-active">
+                                <p>Siz hali kurs tanlamadingiz</p>
+                              </div>
+                              
+                              <div id="active-courses" class="tabcontent">
+                                <p>Siz hali kurs tanlamadingiz</p> 
+                              </div>
+                              
+                              <div id="finished-courses" class="tabcontent">
+                                <p>Siz hali kurs tanlamadingiz</p>
+                              </div>
+                        </div>
                     </div>
                 </div>
             </div>

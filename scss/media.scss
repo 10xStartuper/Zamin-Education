@@ -77,4 +77,26 @@
         padding: 0!important;
         margin-top: 30px;
     }
+
+    .dashboard__top{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .dashboard__img{
+        margin: 0!important;
+        margin-bottom: 32px!important; 
+    }
+    .form-img{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .course__banner{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end!important;
+        gap: 0!important;
+        align-items: flex-start!important;
+    }
 }
