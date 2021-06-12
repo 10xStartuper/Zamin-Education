@@ -323,13 +323,6 @@ section.courses {
   width: 50%;
 }
 
-.courses__title {
-  font-size: 40px;
-  color: #fff;
-  text-shadow: 0px 0px 10px #ccc;
-  margin-bottom: 35px;
-}
-
 .courses__block {
   display: flex;
   justify-content: space-between;
@@ -1087,14 +1080,20 @@ li.active::after {
   color: #ff0000;
 }
 
+.courses__title {
+  font-size: 40px;
+  color: #6C7C69;
+  text-shadow: 0px 0px 10px #ccc;
+  margin-bottom: 35px;
+}
+
 .contacts__number {
   color: #1D9DA0;
 }
 
 .footer {
   font-size: 14px;
-  color: #fff;
-  text-shadow: 0px 0px 10px #4c4c4c;
+  color: #6C7C69;
   background-color: #F2EAE3;
   padding: 20px;
   text-align: center;
