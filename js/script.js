@@ -56,7 +56,7 @@ $(document).ready(function(){
 
 
 function openCity(evt, courseName) {
-  var i, tabcontent, tablinks;
+  let i, tabcontent, tablinks;
   tabcontent = document.getElementsByClassName("tabcontent");
   for (i = 0; i < tabcontent.length; i++) {
     tabcontent[i].style.display = "none";
@@ -68,3 +68,29 @@ function openCity(evt, courseName) {
   document.getElementById(courseName).style.display = "block";
   evt.currentTarget.className += " active";
 }
+
+
+let acc = document.getElementsByClassName("accordion");
+let i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    let panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+
+
+
+let burger = document.querySelector('.fa-bars')
+let dashboard = document.querySelector('.lesson__dashboard')
+let lessonPlay = document.querySelector('.lesson__play')
+burger.addEventListener('click', () => {
+  dashboard.classList.toggle('active')
+  lessonPlay.classList.toggle('active')
+})

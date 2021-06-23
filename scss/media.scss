@@ -99,4 +99,15 @@
         gap: 0!important;
         align-items: flex-start!important;
     }
+    
+    .lesson-row{
+        display: flex;
+        flex-direction: column!important;
+    }
+    .lesson__dashboard{
+        width: 100%!important;
+    }
+    .lesson__play{
+        width: 100%!important;
+    }
 }
