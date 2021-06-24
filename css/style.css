@@ -176,6 +176,27 @@ section.home {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
+.modal-dialog {
+  max-width: 800px;
+  margin: 30px auto;
+}
+
+.modal-body {
+  position: relative;
+  padding: 0px;
+}
+
+.close {
+  position: absolute;
+  right: -30px;
+  top: 0;
+  z-index: 999;
+  font-size: 2rem;
+  font-weight: normal;
+  color: #fff;
+  opacity: 1;
+}
+
 section.elementor {
   background-image: url("../img/gallery.png");
   background-repeat: no-repeat;
@@ -362,7 +383,7 @@ section.courses {
 }
 
 section.login {
-  background-color: #F2EAE3;
+  background-color: #f2eae3;
   background-image: url(../img/gallery-bg.png);
   background-size: 38% auto;
 }
@@ -508,12 +529,12 @@ section.courses {
   width: calc(100% - 24px);
   font-weight: normal;
   font-size: 16px;
-  color: #7A7A7A;
+  color: #7a7a7a;
   height: 35px;
 }
 
 .search-box {
-  border: 1px solid #BABABA;
+  border: 1px solid #bababa;
   border-radius: 6px;
   overflow: hidden;
   padding: 0 6px;
@@ -611,7 +632,7 @@ section.courses {
 
 .product-price {
   font-size: 16px;
-  color: #E1E1E1;
+  color: #e1e1e1;
   font-weight: 600;
 }
 
@@ -650,7 +671,7 @@ section.courses {
 
 section.dashboard {
   padding: 0 !important;
-  background-color: #F2EAE3;
+  background-color: #f2eae3;
   background-image: url(../img/gallery-bg.png);
   background-size: 38% auto;
   border-bottom: 1px solid #dcdfe5;
@@ -691,7 +712,7 @@ section.dashboard .container {
   color: rgba(29, 157, 160, 0.7);
 }
 .dashboard__menu ul li:hover {
-  background-color: #EDF0F9;
+  background-color: #edf0f9;
 }
 
 .dashboard__list-top {
@@ -773,7 +794,7 @@ section.dashboard .container {
 
 section.course-detail {
   padding: 0 !important;
-  background-color: #F2EAE3;
+  background-color: #f2eae3;
   background-image: url(../img/gallery-bg.png);
   background-size: 38% auto;
   border-bottom: 1px solid #dcdfe5;

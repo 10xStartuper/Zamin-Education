@@ -78,9 +78,24 @@
       <section id="courses" class="courses">
         <div class="container">
           <div class="row">
-            <div class="col-md-12 filter-course">
+            <div class="col-md-10">
               <p>Kurslar soni <b>9</b> ta</p>
             </div>
+            <div class="col-md-2">
+              <form
+                action="/filter"
+                method="GET"
+                style="margin: 0; width: 120px"
+              >
+                <select name="select_filter" id="" width="100%">
+                  <option value="Select filter" disabled selected>
+                    Select filter
+                  </option>
+                  <option value="Gooo">Gooo</option>
+                </select>
+              </form>
+            </div>
+
             <div class="col-md-2 side-bar">
               <div class="search-box">
                 <input type="text" class="search" placeholder="Qidiruv" />
